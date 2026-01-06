@@ -83,3 +83,14 @@ FROM job_postings_fact
 WHERE job_location ILIKE '%new%' 
 -- AND
         -- job_title_short = 'Data Scientist';
+
+
+-- SELECT 
+--     DISTINCT job_title_short,
+--     COUNT (*) AS job_count
+-- FROM
+--     job_postings_fact
+-- GROUP BY
+--     job_title_short
+-- ORDER BY
+--     job_count DESC
